@@ -1,0 +1,27 @@
+# Visual Studio local settings and caches
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build and publish output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+artifacts/
+publish/
+*.Publish.xml
+*.pubxml.user
+
+# Test results and NuGet package cache
+TestResults/
+*.trx
+packages/
+*.nupkg
+*.snupkg
+
+# IDE caches
+_ReSharper*/
+*.DotSettings.user
