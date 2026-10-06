@@ -61,13 +61,16 @@ public partial class MainForm : Form
                 UseShellExecute = true
             });
         }
-        catch
+        catch (Exception ex)
         {
             MessageBox.Show(
-                "DWGファイルを開くことができませんでした。",
-                "エラー",
+                this,
+                $"DWGの保存は完了しましたが、既定アプリで開けませんでした。\n" +
+                $"保存先: {dwgPath}\n" +
+                $"詳細: {ex.Message}",
+                "DWG表示エラー",
                 MessageBoxButtons.OK,
-                MessageBoxIcon.Error);
+                MessageBoxIcon.Warning);
         }
     }
 }
